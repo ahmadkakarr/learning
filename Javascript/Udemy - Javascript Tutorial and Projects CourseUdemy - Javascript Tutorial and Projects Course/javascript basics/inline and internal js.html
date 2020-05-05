@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basic</title>
+</head>
+<body>
+
+
+    <h1>hi javascript</h1>
+    <h1>hi peoples</h1>
+
+    <!-- Inline JavaScript -->
+    <button onclick="alert('this awesome alert is from inline javascript')">click me</button>
+    <br>
+    <br>
+    <!-- End of Inline JavaScript Example -->
+
+
+    <!-- Example for internal javascript -->
+    <button class="btn">click me again</button>
+    <button class="btn">click me i am here</button>
+    <button class="btn">click me i am here</button>
+    <button class="btn">click me again</button>
+    <button class="btn">click me again</button>
+
+    <script>
+        // this code is to select all the btn classes and then iterating over each element adding event listener and listening for click and on click it will invoke alert function.
+        document.querySelectorAll(".btn").forEach(item => {
+            item.addEventListener("click", () => {
+                alert("this is message from internal javascript")
+            })
+        });
+    </script>
+    <!-- End of Example for internal javascript -->
+
+</body>
+</html>
